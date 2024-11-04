@@ -49,13 +49,6 @@ export const TodoItem: React.FC<Props> = ({ todo }) => {
           />
         </label>*/}
 
-        <span data-cy="TodoTitle" className="todo__title">
-          {!todo.completed}
-        </span>
-        <button type="button" className="todo__remove" data-cy="TodoDelete">
-          ×
-        </button>
-
         <div data-cy="TodoLoader" className="modal overlay">
           <div className="modal-background has-background-white-ter" />
           <div className="loader" />
@@ -104,10 +97,6 @@ export const TodoItem: React.FC<Props> = ({ todo }) => {
         <span data-cy="TodoTitle" className="todo__title">
           Todo is being saved now
         </span> */}
-
-      <button type="button" className="todo__remove" data-cy="TodoDelete">
-        ×
-      </button>
 
       {/* 'is-active' class puts this modal on top of the todo */}
       {/*} <div data-cy="TodoLoader" className="modal overlay is-active">
